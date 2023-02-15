@@ -1,4 +1,5 @@
 import qrCode from '../../assets/QR Code.png'
+import airplaneImg from '../../assets/airplane.svg'
 
 export function Home() {
   return (
@@ -26,6 +27,13 @@ export function Home() {
               <strong className="block text-[2.5rem]">GRU</strong>
               <span className="block text-base">17:00</span>
             </div>
+
+            <img
+              src={airplaneImg}
+              alt=""
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+
             <div className="text-right">
               <span className="block text-sm text-span">
                 São Francisco, EUA
