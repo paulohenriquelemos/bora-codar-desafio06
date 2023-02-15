@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+.maskradialtop {
+  --mask: radial-gradient(0.75rem at 0.75rem top, transparent 95%, black) -0.75rem;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.maskradialbottom {
+  --mask: radial-gradient(0.75rem at 0.75rem 0.75rem, transparent 95%, black) -0.75rem -0.75rem;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}

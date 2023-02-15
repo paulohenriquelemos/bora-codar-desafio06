@@ -1,18 +1,13 @@
 import qrCode from '../../assets/QR Code.png'
 
 export function Home() {
-  const before =
-    "before:content[''] before:absolute before:w-6 before:h-6 before:bg-purple-900 before:rounded-full before:-top-3 before:-left-3"
-  const after =
-    "after:content[''] after:absolute after:w-6 after:h-6 after:bg-purple-900 after:rounded-full after:-top-3 after:-right-3"
-
   return (
     <div className="font-rubik w-[21rem] flex flex-col justify-center items-center">
       <header>
         <h1 className="text-xl font-medium text-white">Cartão de embarque</h1>
       </header>
       <main className="w-full divide-y-2 divide-dashed">
-        <section className="mt-5 w-full bg-white rounded-t-3xl p-8">
+        <section className="mt-5 w-full bg-white rounded-t-3xl p-8 maskradialbottom">
           <div className="flex justify-between">
             <div>
               <span className="block text-sm text-span">Voo</span>
@@ -42,7 +37,7 @@ export function Home() {
             </div>
           </div>
         </section>
-        <section className={`relative w-full bg-white p-8 ${before} ${after}`}>
+        <section className="relative w-full bg-white p-8 maskradialbottom">
           <div className="flex justify-between">
             <div>
               <span className="block text-sm text-span">Passageiro</span>
@@ -56,9 +51,7 @@ export function Home() {
             </div>
           </div>
         </section>
-        <section
-          className={`relative w-full bg-white rounded-b-3xl p-8 ${before} ${after}`}
-        >
+        <section className="relative w-full bg-white rounded-b-3xl p-8 maskradialtop">
           <div className="flex justify-between">
             <div>
               <span className="block text-sm text-span">Embarque</span>
