@@ -12,5 +12,5 @@ Este projeto consiste em desenvolver um cartão de embarque conforme o modelo do
 <h2>📱 Projeto</h2>
 
 <p align="center">
-  <img src="./src/assets/BoraCodar-Desafio06.png">
+  <img src="./src/assets/layout.png">
 </p>
